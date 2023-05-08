@@ -1,0 +1,50 @@
+<h1>Таблица коротких замыканий фазы А</h1>
+<table mat-table [dataSource]="dataSource1" class="mat-elevation-z8">
+
+  <ng-container matColumnDef="time">
+    <th mat-header-cell *matHeaderCellDef> Время короткого замыкания </th>
+    <td mat-cell *matCellDef="let measurement"> {{measurement.time}} </td>
+  </ng-container>
+  <ng-container matColumnDef="kz_ia">
+    <th mat-header-cell *matHeaderCellDef> Значение тока короткого замыкания фазы A </th>
+    <td mat-cell *matCellDef="let measurement"> {{measurement.kz_ia}} </td>
+  </ng-container>
+  <tr mat-header-row *matHeaderRowDef="displayedColumns1"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns1;"></tr>
+
+</table>
+
+<h1> </h1>
+<h1>Таблица коротких замыканий фазы В</h1>
+<table mat-table [dataSource]="dataSource2" class="mat-elevation-z8">
+
+  <ng-container matColumnDef="time">
+    <th mat-header-cell *matHeaderCellDef> Время короткого замыкания </th>
+    <td mat-cell *matCellDef="let measurement"> {{measurement.time}} </td>
+  </ng-container>
+  <ng-container matColumnDef="kz_ib">
+    <th mat-header-cell *matHeaderCellDef> Значение тока короткого замыкания фазы B </th>
+    <td mat-cell *matCellDef="let measurement"> {{measurement.kz_ib}} </td>
+  </ng-container>
+  <tr mat-header-row *matHeaderRowDef="displayedColumns2"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns2;"></tr>
+
+</table>
+
+<br>
+<h1>Таблица коротких замыканий фазы С</h1>
+<table mat-table [dataSource]="dataSource3" class="mat-elevation-z8">
+
+  <ng-container matColumnDef="time">
+    <th mat-header-cell *matHeaderCellDef> Время короткого замыкания </th>
+    <td mat-cell *matCellDef="let measurement"> {{measurement.time}} </td>
+  </ng-container>
+  <ng-container matColumnDef="kz_ic">
+    <th mat-header-cell *matHeaderCellDef> Значение тока короткого замыкания фазы C </th>
+    <td mat-cell *matCellDef="let measurement"> {{measurement.kz_ic}} </td>
+  </ng-container>
+  <tr mat-header-row *matHeaderRowDef="displayedColumns3"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns3;"></tr>
+
+</table>
+
